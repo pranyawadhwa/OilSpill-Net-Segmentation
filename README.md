@@ -1,2 +1,32 @@
-# OilSpill-Net-Segmentation
-An end-to-end Deep Learning pipeline for detecting and segmenting oil spills from satellite imagery using U-Net and Attention-based architectures.
+# OilSpill-Net: Semantic Segmentation of Oil Spills
+
+[![TensorFlow 2.x](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)](https://tensorflow.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 📌 Project Overview
+Oil spills pose a catastrophic threat to marine ecosystems. This project implements a **Deep Learning-based Computer Vision** pipeline to automate the detection of oil slicks from satellite imagery. By leveraging the **U-Net architecture**, the model provides pixel-level masks to help environmental agencies monitor spill spread and coordinate cleanup efforts.
+
+
+
+## 🚀 Key Features
+* **Architectures:** Support for U-Net, Attention U-Net, and Unet++.
+* **Pipeline:** High-performance `tf.data` API implementation with real-time data augmentation.
+* **Robust Metrics:** Evaluated using **Mean IoU (Intersection over Union)** and **Dice Coefficient** to handle the high class-imbalance between water and oil.
+* **Custom Loss:** Integrated Binary Crossentropy + Dice Loss for better boundary convergence.
+
+## 📊 Performance Results
+The current baseline model achieves:
+* **Mean IoU:** 0.5461
+* **Dice Coefficient:** 0.6788
+* **Training Time:** ~30 epochs on NVIDIA T4 GPU.
+
+### Visualization
+Below are sample results showing the Input Image, Ground Truth (GT), and Model Prediction (Pred):
+| Input | Ground Truth | Prediction |
+| :---: | :---: | :---: |
+| ![Input](outputs/preds/result_unet_0.png) | ![GT](outputs/preds/result_unet_0_gt.png) | ![Pred](outputs/preds/result_unet_0_pred.png) |
+
+## 🛠 Installation & Usage
+1. Clone the repo:
+   ```bash
+   git clone [https://github.com/your-username/OilSpill-Net-Segmentation.git](https://github.com/your-username/OilSpill-Net-Segmentation.git)
