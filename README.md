@@ -17,12 +17,6 @@ The current baseline model achieves:
 * **Dice Coefficient:** 0.6788
 * **Training Time:** ~30 epochs on NVIDIA T4 GPU.
 
-### Visualization
-Below are sample results showing the Input Image, Ground Truth (GT), and Model Prediction (Pred):
-| Input | Ground Truth | Prediction |
-| :---: | :---: | :---: |
-| ![Input](outputs/preds/result_unet_0.png) | ![GT](outputs/preds/result_unet_0_gt.png) | ![Pred](outputs/preds/result_unet_0_pred.png) |
-
 ##  Installation & Usage
 1. Clone the repo:
    ```bash
