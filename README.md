@@ -1,8 +1,5 @@
 # OilSpill-Net: Semantic Segmentation of Oil Spills
 
-[![TensorFlow 2.x](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)](https://tensorflow.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## 📌 Project Overview
 Oil spills pose a catastrophic threat to marine ecosystems. This project implements a **Deep Learning-based Computer Vision** pipeline to automate the detection of oil slicks from satellite imagery. By leveraging the **U-Net architecture**, the model provides pixel-level masks to help environmental agencies monitor spill spread and coordinate cleanup efforts.
 
